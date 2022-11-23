@@ -1,11 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <TcPlcObject Version="1.1.0.1">
   <POU Name="MAIN" Id="{dd7b1ca3-48b8-4b4b-827b-c46336d569fa}">
     <Declaration><![CDATA[PROGRAM MAIN
 VAR
 END_VAR
-]]>
-    </Declaration>
+]]></Declaration>
     <Implementation>
       <ST><![CDATA[]]></ST>
     </Implementation>
