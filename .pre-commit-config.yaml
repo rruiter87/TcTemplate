@@ -17,6 +17,8 @@ repos:
       - id: check-yaml
       # Prevents git from committing large files
       - id: check-added-large-files
+      - id: end-of-file-fixer
+        exclude: '\.(TcPOU|TcDUT|TcTTO|TcGVL|TcGTLO|TcVMO|TcVis|plcproj|tsproj|xti)$'
       - id: requirements-txt-fixer
   - repo: local
     hooks:
