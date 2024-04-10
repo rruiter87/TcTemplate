@@ -17,6 +17,7 @@ repos:
       - id: check-yaml
       # Prevents git from committing large files
       - id: check-added-large-files
+      - id: requirements-txt-fixer
   - repo: local
     hooks:
       - id: stweep
