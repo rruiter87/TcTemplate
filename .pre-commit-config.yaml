@@ -23,13 +23,11 @@ repos:
   - repo: local
     hooks:
       - id: stweep
-        # Hook name shown during hook execution
-        name: Format twincat files with stweep
-        # Where pre-commit can find the script it should call and how it should call it
-        entry: STweep.CLI format --settingsFile "settings.STweep" --path
-        # The language to use, in this case we're using a language present on the system.
-        language: system
-        # A valid regex pattern to define which files should be passed to STweep
+        name: Format TwinCAT files with STweep
+        entry: python stweep_format.py
+        language: python
+        # All files need to be passed at once, or else the license activation/deactivation fails
+        require_serial: true
         files: '.*\.(TcPOU|TcDUT|TcTTO|TcGVL)'
   - repo: local
     hooks:
