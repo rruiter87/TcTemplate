@@ -18,7 +18,9 @@ repos:
       # Prevents git from committing large files
       - id: check-added-large-files
       - id: end-of-file-fixer
-        exclude: '\.(TcPOU|TcDUT|TcTTO|TcGVL|TcGTLO|TcVMO|TcVis|plcproj|tsproj|xti)$'
+      - id: end-of-file-fixer
+        # These files are either edited in the IDE or auto generated. No point in adding a new line at the end.
+        exclude: '\.(TcPOU|TcDUT|TcTTO|TcGVL|TcGTLO|TcVMO|TcIO|TcVis|plcproj|tsproj|tcdmproj|tcdmdrv|tcmproj|xti|STweep)$'
       - id: requirements-txt-fixer
   - repo: local
     hooks:
