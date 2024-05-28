@@ -1,3 +1,4 @@
+import argparse
 import os
 import subprocess
 import sys
@@ -44,11 +45,19 @@ def format_files(settings_file, paths):
 
 
 def main():
+    parser = argparse.ArgumentParser(description="Format files using STweep CLI.")
+    parser.add_argument(
+        "--settingsFile", required=True, help="Path to the settings file"
+    )
+    parser.add_argument("files", nargs="+", help="Paths to the files to be formatted")
+
+    args = parser.parse_args()
+
     stweep_key = check_env_variable()
 
     try:
         activate_license(stweep_key)
-        format_files("PLC/settings.STweep", sys.argv[1:])
+        format_files(args.settingsFile, args.files)
     finally:
         deactivate_license()
 
