@@ -60,3 +60,12 @@ repos:
         additional_dependencies:
           - prettier@2.6.2
           - "@prettier/plugin-xml@0.12.0"
+  - repo: https://github.com/rruiter87/tcunit-precommit
+    rev: v0.1.0
+    hooks:
+      - id: unittest-name-fixer
+        # Remove this line to prevent the names to be automatically fixed
+        args: [--fix]
+        # Ajust this to how you name your unit tests
+        files: '.*_Tests\.TcPOU'
+        
