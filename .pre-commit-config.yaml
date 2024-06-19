@@ -22,6 +22,8 @@ repos:
         # These files are either edited in the IDE or auto generated. No point in adding a new line at the end.
         exclude: '\.(TcPOU|TcDUT|TcTTO|TcGVL|TcGTLO|TcVMO|TcIO|TcVis|plcproj|tsproj|tcdmproj|tcdmdrv|tcmproj|xti|STweep)$'
       - id: requirements-txt-fixer
+  # For this hook you need to have the Stweep.CLI installed and buy a license
+  # See https://www.stweep.com/stweep-cli-beta-releases/
   - repo: local
     hooks:
       - id: stweep
