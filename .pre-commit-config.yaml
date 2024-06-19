@@ -1,13 +1,14 @@
 exclude: '.*\.(resx|Designer.cs|xti|tcscopex|tsproj)'
 repos:
   - repo: https://github.com/pcdshub/pre-commit-hooks.git
-    rev: v1.4.0
+    rev: v1.6.0
     hooks:
       - id: twincat-leading-tabs-remover
       - id: twincat-lineids-remover
       - id: twincat-xml-format
       - id: check-fixed-library-versions
       - id: no-product-version
+      - id: minimize-id-changes
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0  # Use the ref you want to point at
     hooks:
