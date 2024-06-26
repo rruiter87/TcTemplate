@@ -1,6 +1,6 @@
 # TcTemplate
 
-*A template repo for TwinCAT projects*
+_A template repo for TwinCAT projects_
 
 ## How to use
 

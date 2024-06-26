@@ -46,8 +46,8 @@ repos:
     hooks:
       # Run the linter.
       - id: ruff
-        # --select I sorts imports 
-        args: [ --fix, --select, I  ]
+        # --select I sorts imports
+        args: [--fix, --select, I]
       # Run the formatter.
       - id: ruff-format
   - repo: https://gitlab.com/rruiter87/pre-commit-hooks
@@ -70,4 +70,3 @@ repos:
         args: [--fix]
         # Ajust this to how you name your unit tests
         files: '.*_Tests\.TcPOU'
-        
