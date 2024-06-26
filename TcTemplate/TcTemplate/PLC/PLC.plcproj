@@ -5,7 +5,7 @@
     <ProjectGuid>{f0bab1e7-b207-4d97-b1f2-fe3d9803120c}</ProjectGuid>
     <SubObjectsSortedByName>True</SubObjectsSortedByName>
     <DownloadApplicationInfo>true</DownloadApplicationInfo>
-    <WriteProductVersion>true</WriteProductVersion>
+    <WriteProductVersion>false</WriteProductVersion>
     <GenerateTpy>false</GenerateTpy>
     <Name>PLC</Name>
     <ProgramVersion>3.1.4023.0</ProgramVersion>
