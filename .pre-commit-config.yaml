@@ -10,7 +10,7 @@ repos:
       - id: no-product-version
       - id: minimize-id-changes
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0  # Use the ref you want to point at
+    rev: v4.5.0 # Use the ref you want to point at
     hooks:
       # Removes trailing white spaces
       - id: trailing-whitespace
