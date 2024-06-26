@@ -28,7 +28,7 @@ repos:
     hooks:
       - id: stweep
         name: Format TwinCAT files with STweep
-        entry: python stweep_format.py
+        entry: python stweep_format.py --settingsFile=settings.STweep
         language: python
         # All files need to be passed at once, or else the license activation/deactivation fails
         require_serial: true
