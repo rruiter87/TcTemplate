@@ -27,7 +27,7 @@ repos:
         # --pinned: Require the TwinCAT version to be pinned. Apply pinning if combined with --fix.
         # --no-pinned: Require the TwinCAT version to not be pinned. Remove pinning if combined with --fix.
         # uncomment and change to use the arguments
-        # rgs: [--target-version=3.1.4024.20, --pinned, --fix, --reason="This version has a crucial new feature"]
+        # args: [--target-version=3.1.4024.20, --pinned, --fix, --reason="This version has a crucial new feature"]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0 # Use the ref you want to point at
     hooks:
