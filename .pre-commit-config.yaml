@@ -1,7 +1,7 @@
 exclude: '.*\.(resx|Designer.cs|xti|tcscopex|tsproj)'
 repos:
   - repo: https://github.com/pcdshub/pre-commit-hooks.git
-    rev: v1.6.0
+    rev: v1.7.0
     hooks:
       # Replace leading tabs with 4 spaces
       - id: twincat-leading-tabs-remover
@@ -18,6 +18,16 @@ repos:
       # Check if minimize id changes is selected in the plc project file.
       # See https://www.youtube.com/watch?v=KKpBtaYjfWo&t=935s why to do this.
       - id: minimize-id-changes
+      # Checks if TwinCAT versions match in different tsproj files, or if it matches the targeted one.
+      - id: check-twincat-versions
+        # Possible optional arguments
+        # --target-version: Set a version that you want the tsproj file to have
+        # --fix: Fix the version numbers if a target version is set
+        # --reason: Add a reason to the error message in case of a non-matching version.
+        # --pinned: Require the TwinCAT version to be pinned. Apply pinning if combined with --fix.
+        # --no-pinned: Require the TwinCAT version to not be pinned. Remove pinning if combined with --fix.
+        # uncomment and change to use the arguments
+        # rgs: [--target-version=3.1.4024.20, --pinned, --fix, --reason="This version has a crucial new feature"]
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0 # Use the ref you want to point at
     hooks:
