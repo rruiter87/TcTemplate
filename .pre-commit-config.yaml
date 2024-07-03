@@ -1,4 +1,4 @@
-exclude: '.*\.(resx|Designer.cs|xti|tcscopex|tsproj)'
+exclude: '.*\.(resx|Designer.cs|xti|tcscopex)'
 repos:
   - repo: https://github.com/pcdshub/pre-commit-hooks.git
     rev: v1.7.0
