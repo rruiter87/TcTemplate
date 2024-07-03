@@ -3,11 +3,20 @@ repos:
   - repo: https://github.com/pcdshub/pre-commit-hooks.git
     rev: v1.6.0
     hooks:
+      # Replace leading tabs with 4 spaces
       - id: twincat-leading-tabs-remover
+      # remove TwinCAT line ID lines
       - id: twincat-lineids-remover
+      # Use lxml to beautify TwinCAT xml files
       - id: twincat-xml-format
+      # Check if all used libraries' version numbers are fixed
       - id: check-fixed-library-versions
+      # Checks if the product version is saved in the TwinCAT source file.
       - id: no-product-version
+      # Affixes newlines to ST segments
+      - id: twincat-st-newline
+      # Check if minimize id changes is selected in the plc project file.
+      # See https://www.youtube.com/watch?v=KKpBtaYjfWo&t=935s why to do this.
       - id: minimize-id-changes
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.5.0 # Use the ref you want to point at
